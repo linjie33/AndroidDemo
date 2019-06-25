@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+   >
+    
+    <TextView
+        android:text="Hello Android"
+        android:textSize="32dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+
+        android:id="@+id/button1"
+
+        android:onClick="showToast"
+
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+
+        android:layout_margin="20dp"
+
+        android:text="show toast" />
+
+</RelativeLayout>
