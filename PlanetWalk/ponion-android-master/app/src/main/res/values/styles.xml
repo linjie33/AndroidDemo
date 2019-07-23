@@ -1,0 +1,68 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:textViewStyle">@style/PWTextViewStyle</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+
+    <style name="PonionDialogActivity" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="android:windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Animation" />
+
+    <style name="Animation.AppCompat.Dialog" parent="@style/Base.Animation.AppCompat.Dialog" />
+
+    <style name="Animation.AppCompat.DropDownUp" parent="@style/Base.Animation.AppCompat.DropDownUp" />
+
+    <style name="Animation.AppCompat.Tooltip" parent="@style/Base.Animation.AppCompat.Tooltip" />
+
+    <style name="Animation.Design.BottomSheetDialog" parent="@style/Animation.AppCompat.Dialog">
+        <!--<item name="android:windowEnterAnimation">@anim/design_bottom_sheet_slide_in</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/design_bottom_sheet_slide_out</item>-->
+    </style>
+
+    <style name="Animation.HorizontalActivity" parent="@style/Animation">
+        <!--<item name="android:activityOpenEnterAnimation">@anim/horizon_right_enter</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/activity_parent_exit</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/activity_parent_enter</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/horizon_right_exit</item>-->
+    </style>
+
+    <style name="AppTheme.CircleReveal" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.HorizonAni" parent="@style/AppTheme">
+        <item name="android:windowAnimationStyle">@style/Animation.HorizontalActivity</item>
+    </style>
+
+    <style name="AppTheme.Splash" parent="@style/AppTheme">
+        <item name="android:windowBackground">@drawable/splash_window_background</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="PWTextViewStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.linjie.jsharedemo"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    ndk{
+        abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+    }
+        manifestPlaceholders = [
+                JSHARE_PKGNAME : applicationId,
+                JPUSH_APPKEY : "522a6005be0dfc4c445c0d64", //极光控制台创建应用得到的AppKey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+               // TENCENT_APPID: "QQ开发者应用的appID",//腾讯开放平台注册应用得到的appId
+                FACEBOOK_APPID: "321303548817407",//FACEBOOK
+                ]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation 'cn.jiguang.sdk:jshare:1.7.1'  // 此处以JShare 1.6.0 版本为例，具体版本请参考压缩包libs的jar包版本。
+    implementation 'cn.jiguang.sdk:jshare-facebookmodel:1.7.1'  // 此处以jshare-facebookmodel 1.6.0  版本为例，具体版本请参考压缩包libs的jar包版本。
+    implementation 'cn.jiguang.sdk:jcore:2.1.0'  // 此处以JCore 1.2.3版本为例，具体版本请参考压缩包libs的jar包版本。
+
+}

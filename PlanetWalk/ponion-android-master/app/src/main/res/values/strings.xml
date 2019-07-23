@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">剥洋葱</string>
+    <string name="picture_type">图片视频</string>
+    <string name="text_type">文字</string>
+    <string name="lock_type">锁</string>
+    <string name="text_hint">添加文字说明</string>
+    <string name="del">删除</string>
+    <string name="preview">预览</string>
+    <string name="publish">发布</string>
+    <string name="edit">编辑</string>
+    <string name="error_gif">长宽不小于 %1$dpx，且大小不超过 %2$sM。</string>
+    <string name="permission_request_denied">权限请求失败</string>
+    <string name="comment_title">发表感想后查看评论</string>
+    <string name="go_to_post">查看更多评论</string>
+
+    <plurals name="error_over_count">
+        <item quantity="one">您最多可以选择%1$d张图片</item>
+        <item quantity="other">您最多可以选择%1$d张图片</item>
+    </plurals>
+
+    <string name="feed">喂食</string>
+    <string name="prepare_food">备好食物</string>
+    <string name="go_out">去逛逛</string>
+    <string name="talk">聊天</string>
+    <string name="not_at_home">现在不在家</string>
+    <string name="homeless">我去流浪了，求助gcsbaba</string>
+    <string name="email">写信</string>
+    <string name="azcat">阿滋猫</string>
+    <string name="next_step">下一步</string>
+    <string name="input_name">小家伙叫什么呢</string>
+    <string name="input_name_hint">请输入名字</string>
+    <string name="confirm">确定</string>
+    <string name="luck">运气值</string>
+    <string name="social_property">魅力值</string>
+    <string name="selfcare">自理能力</string>
+    <string name="increase">增加</string>
+    <string name="decrease">减少</string>
+    <string name="name">姓名</string>
+    <string name="shop">商店</string>
+    <string name="storage">仓库</string>
+    <string name="hungry_level">饱腹度</string>
+    <string name="close_level">亲密度</string>
+    <string name="bag">行李</string>
+    <string name="add">添加</string>
+    <string name="cancel">取消</string>
+    <string name="coins_display">金币：%d</string>
+    <string name="fill_plate">放入</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">邮箱</string>
+    <string name="prompt_password">密码</string>
+    <string name="action_sign_up_short">注册</string>
+    <string name="action_sign_in">注册或者登陆</string>
+    <string name="action_sign_in_short">登陆</string>
+    <string name="error_invalid_email">邮件地址不合法</string>
+    <string name="error_invalid_password">密码太短</string>
+    <string name="error_incorrect_password">账号或者密码不正确</string>
+    <string name="error_field_required">必填</string>
+    <string name="network_error">网络错误，获取信息失败</string>
+
+    <string name="request_travel">世界那么大，我想去看看</string>
+    <string name="introduction_with_pet">寄语</string>
+    <string name="close">关闭</string>
+    <string name="send_mail">捎个信</string>
+    <string name="raise_together">一起养</string>
+    <string name="pet_mail_title">寄语信</string>
+    <string name="pet_mail_desc">放一封寄语到宠物的背包，让他人能帮主到他</string>
+
+    <string name="ignore_pet">忽略</string>
+    <string name="open_mail">寄语</string>
+    <string name="help_pet">帮TA</string>
+
+    <string name="recommend_pet_mail_title">的寄语</string>
+    <string name="recommend_pet_title">的主人</string>
+    <string name="give_gift_hint_title">可以送TA任何礼物</string>
+
+    <string name="male">男生</string>
+    <string name="female">女生</string>
+    <string name="me">我</string>
+
+    <string name="choose_avatar_hint">选择形象</string>
+    <string name="empty_pet_hint">买点食物\n可以吸引宠物上门</string>
+    <string name="pet_coming_hint">有宠物靠近...</string>
+    <string name="go_shop_hint">去采购一些</string>
+
+    <string name="no_news">查看留言板</string>
+    <string name="take_pet">直接领养</string>
+
+    <string name="cost_coins_hint">消耗：%d金币</string>
+
+    <string name="post">留言</string>
+    <string name="warn_draft_deleted">取消后所有内容将不保留，确定取消吗？</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

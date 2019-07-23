@@ -7,12 +7,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
@@ -48,16 +54,78 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 try{
                     OkHttpClient client = new OkHttpClient();
                     Request request = new Request.Builder()
-                            .url("https://www.baidu.com/")
+                            .url("http://localhost:8081/get_data.json")
                             .build();
                     Response response = client.newCall(request).execute();
                     String responseData = response.body().string();
-                    showResponse(responseData);
+                    //parseXMLWithPull(responseData);
+                    parseJSONWithJSONObject(responseData);
+                 //   showResponse(responseData);
                 }catch (Exception e){
                 e.printStackTrace();
                 }
             }
-        }).start();;
+        }).start();
+    }
+
+    private void parseJSONWithJSONObject(String responseData) {
+        try{
+            JSONArray jsonArray = new JSONArray(responseData);
+            for(int i = 0;i < jsonArray.length();i++){
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                String id = jsonObject.getString("id");
+                String name = jsonObject.getString("name");
+                String version = jsonObject.getString("version");
+                Log.d("MainActivity", "id is "+id);
+                Log.d("MainActivity", "name is "+name);
+                Log.d("MainActivity", "version is "+version);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
+    private void parseXMLWithPull(String responseData) {
+        try{
+            XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
+            XmlPullParser xmlPullParser = factory.newPullParser();
+            xmlPullParser.setInput(new StringReader(responseData));
+            int eventType = xmlPullParser.getEventType();
+            String id="";
+            String name="";
+            String version="";
+            while ((eventType != XmlPullParser.END_DOCUMENT)){
+                String nodeName =xmlPullParser.getName();
+                switch (eventType){
+                    //开始解析某个节点
+                    case XmlPullParser.START_TAG:{
+                        if("id".equals(nodeName)){
+                            id =  xmlPullParser.nextText();
+                        }else if ("name".equals(nodeName)){
+                            name = xmlPullParser.nextText();
+                        }else if("version".equals(nodeName)){
+                            version = xmlPullParser.nextText();
+                        }
+                        break;
+                    }
+                    //完成解析某个节点
+                        case XmlPullParser.END_TAG:{
+                            if("app".equals(nodeName)){
+                                Log.d("MainActivity", "id is "+id);
+                                Log.d("MainActivity", "name is "+name);
+                                Log.d("MainActivity", "version is "+version);
+                            }
+                            break;
+                        }
+                        default:
+                            break;
+                }
+                eventType = xmlPullParser.next();
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     private void sendRequestWithHttpURLConnection() {
