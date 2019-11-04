@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name" translatable="false">计分板</string>
+    <string name="text1" translatable="false">team A</string>
+    <string name="textview2" translatable="false">team B</string>
+    <string name="scoreA" translatable="false">0</string>
+    <string name="scoreB" translatable="false">0</string>
+    <string name="button1" translatable="false">+1</string>
+    <string name="button2" translatable="false">+2</string>
+    <string name="button3" translatable="false">+3</string>
+    <string name="undoButton" translatable="false">undo</string>
+    <string name="resetButton" translatable="false">reset</string>
+</resources>
