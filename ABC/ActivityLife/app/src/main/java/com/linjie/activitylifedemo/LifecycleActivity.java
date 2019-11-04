@@ -9,7 +9,11 @@ import android.view.Window;
 import android.widget.Button;
 import android.content.Intent;
 
-
+/*
+* activity生命周期
+*  --
+*
+* */
 //生命周期演示
 public class LifecycleActivity extends Activity implements View.OnClickListener {
     private static final String TAG = LifecycleActivity.class.getSimpleName();

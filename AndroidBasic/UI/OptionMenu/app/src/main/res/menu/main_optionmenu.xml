@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/create"
+        android:title="新建" />
+    <item android:id="@+id/edit"
+        android:title="编辑" />
+    <item android:id="@+id/save"
+        android:title="保存" />
+    <item android:id="@+id/save_as"
+        android:title="另存为..." />
+    <item android:id="@+id/help"
+        android:title="帮助" />
+</menu>

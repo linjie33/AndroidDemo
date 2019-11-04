@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spingarr">
+        <item>日本关西</item>
+        <item>东京</item>
+        <item>美丽的北海道</item>
+        <item>大阪+奈良</item>
+        <item>神户牛</item>
+    </string-array>
+    <string-array name="mainlist">
+        <item>求助：从京都到东京最快的路线怎么走</item>
+        <item>求助：京都地铁站附近的住宿推荐</item>
+        <item>哪有靠谱的小孩的衣服卖</item>
+    </string-array>
+</resources>

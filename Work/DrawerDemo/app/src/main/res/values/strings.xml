@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">公告</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title1">关西行</string>
+    <string name="nav_header_title2">群组</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_addgroup">添加群</string>
+    <string name="menu_setting">设置</string>
+    <string name="common">公共频道</string>
+    <string name="paychannel">付费频道</string>
+    <string name="user_name">村里的猫</string>
+    <string name="channel_1">公共频道</string>
+    <string name="channel_2">付费频道</string>
+</resources>
